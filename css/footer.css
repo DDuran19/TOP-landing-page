@@ -1,3 +1,7 @@
+footer {
+    margin: 1rem;
+}
+
 footer > #callToActionContainer {
     background-color: var(--button-color);
     border-radius: 5px;

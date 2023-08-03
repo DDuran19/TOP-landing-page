@@ -3,7 +3,109 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/general.css" />
+        <link rel="stylesheet" href="/css/header.css" />
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/footer.css" />
+        <link rel="stylesheet" href="/css/animations.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter&family=Nunito&display=swap"
+            rel="stylesheet"
+        />
         <title>TOP - Landing Page</title>
     </head>
-    <body></body>
+    <body>
+        <header>
+            <div id="blurrer"></div>
+            <nav>
+                <section>
+                    <img
+                        src="./assets/burger.svg"
+                        alt="Navigation bar burger"
+                        width="25px"
+                        id="navBarBurger"
+                    />
+                    <h1 id="headerLogo">Header Logo</h1>
+                </section>
+
+                <ul>
+                    <li><a href="#banner">header link one</a></li>
+                    <li><a href="#content">header link two</a></li>
+                    <li><a href="#footer">header link three</a></li>
+                </ul>
+            </nav>
+            <section id="banner">
+                <div class="leftIntro">
+                    <p class="mainBanner">
+                        This website is <br />
+                        awesome
+                    </p>
+                    <p class="introSubtitle">
+                        This website has some subtext that goes here under the
+                        main title. <br />It's a smaller font and the color is
+                        lower contrast
+                    </p>
+                    <button id="signupBtn">Sign up</button>
+                </div>
+
+                <div class="rightIntro">
+                    <p>this is a placeholder for an image</p>
+                </div>
+            </section>
+        </header>
+        <main>
+            <h2>Some random information.</h2>
+            <section id="content">
+                <div class="container">
+                    <div class="item"></div>
+                    <p class="itemDescription">
+                        this is some subtext under an illustration or image
+                    </p>
+                </div>
+                <div class="container">
+                    <div class="item"></div>
+                    <p class="itemDescription">
+                        this is some subtext under an illustration or image
+                    </p>
+                </div>
+                <div class="container">
+                    <div class="item"></div>
+                    <p class="itemDescription">
+                        this is some subtext under an illustration or image
+                    </p>
+                </div>
+                <div class="container">
+                    <div class="item"></div>
+                    <p class="itemDescription">
+                        this is some subtext under an illustration or image
+                    </p>
+                </div>
+            </section>
+            <section class="quote" id="footer">
+                <article>
+                    <p id="quote">
+                        This is an inspring quote, or a testimonial from a
+                        customer. Maybe it's just filling up space, or maybe
+                        people will actually read it. Who knows? All I know is
+                        that it looks nice.
+                    </p>
+                    <p id="author">-Thor, God of Thunder</p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <div id="callToActionContainer">
+                <article>
+                    <h5>Call to action! It's time!</h5>
+                    <p>
+                        Sign up for our product by clicking that button right
+                        over there!
+                    </p>
+                </article>
+                <button>Sign up</button>
+            </div>
+        </footer>
+    </body>
 </html>
