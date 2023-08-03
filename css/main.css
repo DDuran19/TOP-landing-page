@@ -1,0 +1,9 @@
+main {
+    height: 2000px;
+}
+main > h2 {
+    font-size: var(--information-header-size);
+    font-weight: var(--information-header-weight);
+    color: var(--information-header-color);
+    text
+}
