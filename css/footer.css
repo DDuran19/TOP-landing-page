@@ -1,0 +1,14 @@
+footer > #callToActionContainer {
+    background-color: var(--button-color);
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: var(--content-max-width);
+    padding: 2rem 4rem;
+    margin-bottom: 4rem;
+}
+footer > #callToActionContainer > button {
+    border-color: white;
+}

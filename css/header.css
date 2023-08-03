@@ -1,7 +1,11 @@
 header {
-    background-color: var(--dark-background-color);
+    background: var(--dark-linear-background);
+    background-size: 500% 500%;
+    animation: changingBackgroundGradient 15s ease infinite;
     min-height: 514px;
     color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 header > nav,
 header > #blurrer {
@@ -17,11 +21,19 @@ header > #blurrer {
     margin-right: auto;
     padding: 1rem 4rem;
 }
+#navBarBurger {
+    width: 0;
+}
 header > #blurrer {
     backdrop-filter: blur(3px);
     height: 55px;
 }
-header > nav > h1 {
+header > nav > section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+header > nav > section > h1 {
     font-weight: bolder;
     font-size: 20px;
     font-family: var(--inter-font-family);
@@ -35,11 +47,12 @@ header > nav > ul {
 }
 header > nav > ul > li {
     display: inline-block;
+    cursor: pointer;
 }
 
 header > section {
     display: flex;
-    max-width: 1200px;
+    max-width: var(--content-max-width);
     margin-left: auto;
     margin-right: auto;
     padding: 7rem 2rem 2rem 2rem;
@@ -69,7 +82,8 @@ header > section > .leftIntro > .introSubtitle {
     font-size: var(--hero-secondary-size);
     color: var(--hero-secondary-color);
 }
-header > section > .leftIntro > button {
+header > section > .leftIntro > button,
+footer > #callToActionContainer > button {
     margin-top: 1rem;
     background-color: var(--button-color);
     color: white;
@@ -80,11 +94,18 @@ header > section > .leftIntro > button {
     border: 1px solid transparent;
     cursor: pointer;
 }
-header > section > .leftIntro > button:hover {
+
+header > nav > ul > li:hover {
+    color: yellow;
+}
+
+header > section > .leftIntro > button:hover,
+footer > #callToActionContainer > button:hover {
     transform: scale(1.03, 1.03);
     border: 1px solid white;
 }
-header > section > .leftIntro > button:active {
+header > section > .leftIntro > button:active,
+footer > #callToActionContainer > button:active {
     transform: scale(1.03, 1.03);
     border: 1px solid white;
     box-shadow: rgba(252, 254, 255, 0.12) 0px 2px 4px 0px,
@@ -97,6 +118,24 @@ header > section > .leftIntro > button:active {
         flex-wrap: wrap;
     }
     header > section > .rightIntro {
-        margin: 2.5rem 0;
+        margin: 2.55rem 0;
+    }
+}
+@media screen and (max-width: 700px) {
+    header > nav {
+        padding-left: 2.5rem;
+    }
+    header > nav > ul {
+        display: none;
+    }
+    #navBarBurger {
+        width: 25px;
+    }
+}
+@media screen and (max-width: 490px) {
+    header > section > .rightIntro {
+        min-width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
